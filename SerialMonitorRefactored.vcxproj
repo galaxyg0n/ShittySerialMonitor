@@ -136,14 +136,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="cApp.h" />
+    <ClInclude Include="carPanel.h" />
     <ClInclude Include="cMain.h" />
+    <ClInclude Include="COM_Communication.h" />
+    <ClInclude Include="connectionPanel.h" />
     <ClInclude Include="controlPanel.h" />
+    <ClInclude Include="dataPanel.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="cApp.cpp" />
+    <ClCompile Include="carPanel.cpp" />
     <ClCompile Include="cMain.cpp" />
+    <ClCompile Include="COM_Communication.cpp" />
+    <ClCompile Include="connectionPanel.cpp" />
     <ClCompile Include="controlPanel.cpp" />
+    <ClCompile Include="dataPanel.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="SerialMonitorRefactored.rc" />

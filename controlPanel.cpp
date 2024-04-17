@@ -8,12 +8,19 @@ wxEND_EVENT_TABLE()
 
 
 
-controlPanel::controlPanel(wxFrame* parent) : wxPanel(parent, wxID_ANY, wxPoint(0, 0), wxSize(250, 300))
+controlPanel::controlPanel(wxFrame* parent, COM_Communication* new_comHandle) : wxPanel(parent, wxID_ANY, wxPoint(0, 0), wxSize(750, 300))
 {
+	comHandle = new_comHandle;
 
-	b_BtnSpeed = new wxButton(p_ControlPanel, 30001, "Speed up", wxDefaultPosition, wxSize(150, 30));
-	b_BtnSlow  = new wxButton(p_ControlPanel, 30002, "Slow down", wxDefaultPosition, wxSize(150, 30));
-	b_BtnKill  = new wxButton(p_ControlPanel, 30003, "KILL!", wxDefaultPosition, wxSize(150, 30));
+	b_BtnSpeed = new wxButton(this, 30001, "Speed up", wxDefaultPosition, wxSize(150, 30));
+	b_BtnSlow  = new wxButton(this, 30002, "Slow down", wxDefaultPosition, wxSize(150, 30));
+	b_BtnKill  = new wxButton(this, 30003, "KILL!", wxDefaultPosition, wxSize(150, 30));
+
+	s_controlSizer = new wxBoxSizer(wxHORIZONTAL);
+	s_controlSizer->Add(b_BtnSpeed, 1, wxALL, 5);
+	s_controlSizer->Add(b_BtnSlow, 1, wxALL, 5);
+	s_controlSizer->Add(b_BtnKill, 1, wxALL, 5);
+	this->SetSizer(s_controlSizer);
 
 
 }
@@ -22,6 +29,9 @@ controlPanel::~controlPanel()
 {
 
 }
+
+
+// -------------------------- Button handlers -------------------------- //
 
 
 void controlPanel::SendSpeedUp(wxCommandEvent& evt)

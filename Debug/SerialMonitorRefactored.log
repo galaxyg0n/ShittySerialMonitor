@@ -1,7 +1,2 @@
-﻿  cApp.cpp
-  cMain.cpp
-  controlPanel.cpp
-C:\Users\mathi\OneDrive - Syddansk Universitet\PROG\CPP\SerialMonitorRefactored\cMain.h(14,14): error C2143: syntax error: missing ';' before '*'
-C:\Users\mathi\OneDrive - Syddansk Universitet\PROG\CPP\SerialMonitorRefactored\cMain.h(14,14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\mathi\OneDrive - Syddansk Universitet\PROG\CPP\SerialMonitorRefactored\cMain.h(14,25): error C2238: unexpected token(s) preceding ';'
-  Generating Code...
+﻿  COM_Communication.cpp
+  SerialMonitorRefactored.vcxproj -> C:\Users\mathi\OneDrive - Syddansk Universitet\PROG\CPP\SerialMonitorRefactored\Debug\SerialMonitorRefactored.exe

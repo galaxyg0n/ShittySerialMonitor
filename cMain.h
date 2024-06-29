@@ -11,7 +11,6 @@
 
 // -------------------------
 
-#define ICON "C:\\Users\\mathi\\OneDrive - Syddansk Universitet\\PROG\\CPP\\SerialMonitor\\Release\\Icon.ico"
 
 
 
